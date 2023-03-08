@@ -1,0 +1,11 @@
+---
+- name: Docker instalation begins 
+  snap:
+    name: Docker
+    state: latest
+- name: Make sure Nginx is running
+  systemd:
+    state: started
+    name: Docker
+
+    
